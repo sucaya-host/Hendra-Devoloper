@@ -20,4 +20,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://hendra-portfolio.example.com/sitemap.xml
+Sitemap: https://github.com/sucaya-host/Hendra-Devoloper/sitemap.xml
