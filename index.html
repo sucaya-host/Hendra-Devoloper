@@ -1,837 +1,1023 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="theme-color" content="#fdfbf7" />
+<html lang="id"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<!-- ============ PRIMARY SEO ============ -->
-<title>Hendra — Frontend &amp; Backend Developer | Portfolio</title>
-<meta name="description" content="Hendra adalah Frontend & Backend Developer yang membangun aplikasi dan website: Mesin Kasir, Aplikasi Manajemen Uang, dan Sistem Manajemen Kost. Tech stack: HTML, CSS, JavaScript, Python." />
-<meta name="keywords" content="Hendra, frontend developer, backend developer, web developer, portfolio, HTML, CSS, JavaScript, Python, mesin kasir, aplikasi keuangan, sistem manajemen kost" />
-<meta name="author" content="Hendra" />
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-<meta name="googlebot" content="index, follow" />
-<link rel="canonical" href="https://hendra-portfolio.example.com/" />
+  <!-- ===================== PRIMARY SEO ===================== -->
+  <title>Bagas Wisnaya Dev — 2D Game Developer, IoT Tinkerer &amp; Minecraft Modder</title>
+  <meta name="title" content="Bagas Wisnaya Dev — 2D Game Developer, IoT Tinkerer &amp; Minecraft Modder">
+  <meta name="description" content="Portofolio Bagas Wisnaya Dev — developer yang berfokus pada pengembangan game 2D (GDScript, C#), eksperimen IoT &amp; hardware (C++), serta modding Minecraft Java dengan Fabric. Lihat proyek Left a Letter dan DIY Pump It Up Pad Controller.">
+  <meta name="keywords" content="Bagas Wisnaya Dev, portofolio developer, 2D game developer, Godot GDScript, IoT tinkerer, microcontroller, Minecraft Fabric modding, Java modder, C++ hardware, game development Indonesia, DIY arcade controller, Pump It Up pad">
+  <meta name="author" content="Bagas Wisnaya Dev">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="language" content="Indonesian">
+  <meta name="theme-color" content="#fdfbf7">
+  <link rel="canonical" href="https://sucaya-host.github.io/Bagas-Wisnaya-Dev/">
 
-<!-- ============ OPEN GRAPH (Facebook / WhatsApp / LinkedIn) ============ -->
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="Hendra Developer" />
-<meta property="og:title" content="Hendra — Frontend & Backend Developer" />
-<meta property="og:description" content="Portfolio Hendra. Membangun aplikasi yang sederhana, efisien, dan menyelesaikan masalah nyata. Frontend & Backend Development." />
-<meta property="og:url" content="https://hendra-portfolio.example.com/" />
-<meta property="og:locale" content="id_ID" />
-<meta property="og:image" content="https://hendra-portfolio.example.com/og-image.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Hendra — Frontend & Backend Developer" />
+  <!-- ===================== OPEN GRAPH ===================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sucaya-host.github.io/Bagas-Wisnaya-Dev/">
+  <meta property="og:title" content="Bagas Wisnaya Dev — 2D Game Developer, IoT Tinkerer &amp; Minecraft Modder">
+  <meta property="og:description" content="Developer yang berfokus pada game 2D, eksperimen IoT &amp; hardware, dan modding Minecraft. Jelajahi proyek dan keahlian saya.">
+  <meta property="og:site_name" content="Bagas Wisnaya Dev">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:image" content="https://sucaya-host.github.io/Bagas-Wisnaya-Dev/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Bagas Wisnaya Dev — 2D Game Developer, IoT Tinkerer &amp; Minecraft Modder">
 
-<!-- ============ TWITTER / X ============ -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Hendra — Frontend & Backend Developer" />
-<meta name="twitter:description" content="Portfolio Hendra. Frontend & Backend Development. Build technology that solves real problems." />
-<meta name="twitter:image" content="https://hendra-portfolio.example.com/og-image.png" />
+  <!-- ===================== TWITTER ===================== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bagas Wisnaya Dev — 2D Game Developer, IoT Tinkerer &amp; Minecraft Modder">
+  <meta name="twitter:description" content="Developer yang berfokus pada game 2D, eksperimen IoT &amp; hardware, dan modding Minecraft. Jelajahi proyek dan keahlian saya.">
+  <meta name="twitter:image" content="https://sucaya-host.github.io/Bagas-Wisnaya-Dev/og-image.png">
+  <meta name="twitter:image:alt" content="Bagas Wisnaya Dev — portofolio developer game 2D dan IoT">
 
-<!-- ============ FONTS ============ -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet" />
+  <!-- ===================== EXTRA SEO ===================== -->
+  <meta name="publisher" content="Bagas Wisnaya Dev">
+  <meta name="rating" content="general">
+  <meta name="revisit-after" content="7 days">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="sitemap" type="application/xml" href="https://sucaya-host.github.io/Bagas-Wisnaya-Dev/sitemap.xml">
+  <link rel="me" href="https://github.com/sucaya-host">
 
-<!-- ============ FAVICON (inline SVG, no external file) ============ -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='8' y='8' width='84' height='84' rx='22' fill='%23fdfbf7' stroke='%232d2d2d' stroke-width='6'/%3E%3Ctext x='50' y='70' font-family='Comic Sans MS, cursive' font-size='58' font-weight='700' text-anchor='middle' fill='%23ff4d4d'%3EH%3C/text%3E%3C/svg%3E" />
-<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='8' y='8' width='84' height='84' rx='22' fill='%23fdfbf7' stroke='%232d2d2d' stroke-width='6'/%3E%3Ctext x='50' y='70' font-family='Comic Sans MS, cursive' font-size='58' font-weight='700' text-anchor='middle' fill='%23ff4d4d'%3EH%3C/text%3E%3C/svg%3E" />
+  <!-- ===================== FAVICON (inline SVG) ===================== -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23fdfbf7' stroke='%232d2d2d' stroke-width='6'/%3E%3Ctext x='50' y='68' font-family='Comic Sans MS, sans-serif' font-size='54' font-weight='bold' text-anchor='middle' fill='%23ff4d4d'%3EB%3C/text%3E%3C/svg%3E">
 
-<!-- ============ STRUCTURED DATA (Google + AI) ============ -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Hendra",
-  "url": "https://hendra-portfolio.example.com/",
-  "jobTitle": "Frontend & Backend Developer",
-  "description": "Frontend & Backend Developer yang membangun aplikasi dan website untuk menyelesaikan masalah nyata.",
-  "knowsAbout": ["HTML", "CSS", "JavaScript", "Python", "Frontend Development", "Backend Development"],
-  "knowsLanguage": ["id", "en"]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Hendra Developer Portfolio",
-  "url": "https://hendra-portfolio.example.com/",
-  "inLanguage": "id-ID",
-  "description": "Portfolio pribadi Hendra, Frontend & Backend Developer."
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Projects by Hendra",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "item": {
-      "@type": "SoftwareApplication", "name": "Mesin Kasir",
-      "applicationCategory": "BusinessApplication",
-      "description": "Aplikasi mesin kasir untuk transaksi penjualan dan pencatatan data."
-    }},
-    { "@type": "ListItem", "position": 2, "item": {
-      "@type": "SoftwareApplication", "name": "Aplikasi Manajemen Uang",
-      "applicationCategory": "FinanceApplication",
-      "description": "Aplikasi pengelolaan keuangan untuk mencatat pemasukan dan pengeluaran."
-    }},
-    { "@type": "ListItem", "position": 3, "item": {
-      "@type": "SoftwareApplication", "name": "Sistem Manajemen Kost",
-      "applicationCategory": "BusinessApplication",
-      "description": "Sistem manajemen kost untuk mengelola penghuni, kamar, dan pembayaran."
-    }}
-  ]
-}
-</script>
+  <!-- ===================== FONTS ===================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="Bagas%20Wisnaya%20Dev%20%E2%80%94%202D%20Game%20Developer,%20IoT%20Tinkerer%20&amp;%20Minecraft%20Modder_files/css2_Qn0t.css" rel="stylesheet">
 
-<style>
-  /* ================= DESIGN TOKENS ================= */
-  :root {
-    --bg: #fdfbf7;
-    --fg: #2d2d2d;
-    --muted: #e5e0d8;
-    --accent: #ff4d4d;
-    --blue: #2d5da1;
-    --yellow: #fff9c4;
-    --card: #ffffff;
-    --paper-dot: #e5e0d8;
-
-    --wobbly: 255px 15px 225px 15px / 15px 225px 15px 255px;
-    --wobbly-md: 125px 10px 115px 10px / 10px 115px 10px 125px;
-    --wobbly-sm: 60px 8px 55px 8px / 8px 55px 8px 60px;
-
-    --shadow: 4px 4px 0 0 var(--fg);
-    --shadow-sm: 3px 3px 0 0 var(--fg);
-    --shadow-paper: 3px 3px 0 0 rgba(45, 45, 45, 0.12);
-    --shadow-lg: 8px 8px 0 0 var(--fg);
-    --shadow-hover: 2px 2px 0 0 var(--fg);
-
-    --font-head: 'Kalam', 'Comic Sans MS', cursive;
-    --font-body: 'Patrick Hand', 'Comic Sans MS', cursive;
-
-    --maxw: 1000px;
-    --section-py: 72px;
+  <!-- ===================== STRUCTURED DATA (JSON-LD) ===================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://sucaya-host.github.io/Bagas-Wisnaya-Dev/#person",
+        "name": "Bagas Wisnaya Dev",
+        "alternateName": "Bagas Wisnaya",
+        "description": "2D Game Developer, IoT Tinkerer, dan Minecraft Modder yang berfokus pada pengembangan game 2D, eksperimen hardware, dan programming.",
+        "jobTitle": "2D Game Developer & IoT Tinkerer",
+        "knowsAbout": [
+          "2D Game Development",
+          "GDScript",
+          "C#",
+          "C++",
+          "IoT",
+          "Microcontroller",
+          "Minecraft Fabric Modding",
+          "Java"
+        ],
+        "knowsLanguage": ["Indonesian", "English"],
+        "url": "https://sucaya-host.github.io/Bagas-Wisnaya-Dev/",
+        "image": "https://sucaya-host.github.io/Bagas-Wisnaya-Dev/og-image.png",
+        "sameAs": ["https://github.com/sucaya-host"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://sucaya-host.github.io/Bagas-Wisnaya-Dev/#website",
+        "url": "https://sucaya-host.github.io/Bagas-Wisnaya-Dev/",
+        "name": "Bagas Wisnaya Dev",
+        "inLanguage": "id-ID",
+        "publisher": { "@id": "https://sucaya-host.github.io/Bagas-Wisnaya-Dev/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "mainEntity": { "@id": "https://sucaya-host.github.io/Bagas-Wisnaya-Dev/#person" },
+        "isPartOf": { "@id": "https://sucaya-host.github.io/Bagas-Wisnaya-Dev/#website" }
+      },
+      {
+        "@type": "ItemList",
+        "name": "Projects by Bagas Wisnaya Dev",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Left a Letter",
+              "description": "Proyek game 2D yang berfokus pada gameplay, game mechanics, interactive systems, dan game programming.",
+              "genre": "2D Game",
+              "programmingLanguage": "GDScript"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "DIY Pump It Up Pad Controller",
+              "description": "Controller arcade DIY terinspirasi Pump It Up yang berfokus pada hardware tinkering, sistem input, dan microcontroller.",
+              "genre": "Arcade Controller",
+              "programmingLanguage": "C++"
+            }
+          }
+        ]
+      }
+    ]
   }
+  </script>
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+  <style>
+    /* ============================== DESIGN TOKENS ============================== */
+    :root {
+      --paper:      #fdfbf7;
+      --ink:        #2d2d2d;
+      --muted:      #e5e0d8;
+      --accent:     #ff4d4d;
+      --border:     #2d2d2d;
+      --pen:        #2d5da1;
+      --postit:     #fff9c4;
+      --white:      #ffffff;
 
-  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+      --wobbly:     255px 15px 225px 15px / 15px 225px 15px 255px;
+      --wobbly-md:  125px 10px 115px 12px / 10px 115px 12px 125px;
+      --wobbly-sm:  60px 8px 55px 10px / 8px 55px 10px 60px;
+      --wobbly-btn: 30px 12px 28px 14px / 12px 28px 14px 30px;
 
-  body {
-    font-family: var(--font-body);
-    color: var(--fg);
-    background-color: var(--bg);
-    background-image: radial-gradient(var(--paper-dot) 1px, transparent 1px);
-    background-size: 24px 24px;
-    line-height: 1.65;
-    font-size: 1.15rem;
-    overflow-x: hidden;
-  }
+      --shadow:      3px 3px 0 0 rgba(45, 45, 45, .12);
+      --shadow-hard: 4px 4px 0 0 var(--ink);
+      --shadow-big:  8px 8px 0 0 var(--ink);
 
-  img, svg { max-width: 100%; display: block; }
+      --font-head: 'Kalam', cursive;
+      --font-body: 'Patrick Hand', cursive;
 
-  a { color: inherit; text-decoration: none; }
+      --maxw: 1080px;
+    }
 
-  h1, h2, h3, h4 {
-    font-family: var(--font-head);
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: -0.01em;
-  }
+    /* ============================== RESET ============================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  ::selection { background: var(--accent); color: #fff; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
-  :focus-visible {
-    outline: 3px dashed var(--blue);
-    outline-offset: 3px;
-    border-radius: 6px;
-  }
+    body {
+      font-family: var(--font-body);
+      font-size: 1.15rem;
+      line-height: 1.65;
+      color: var(--ink);
+      background-color: var(--paper);
+      background-image: radial-gradient(var(--muted) 1px, transparent 1px);
+      background-size: 24px 24px;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
 
-  /* ================= LAYOUT ================= */
-  .container {
-    width: 100%;
-    max-width: var(--maxw);
-    margin: 0 auto;
-    padding: 0 24px;
-  }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
 
-  section { padding: var(--section-py) 0; position: relative; }
+    h1, h2, h3, h4 {
+      font-family: var(--font-head);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
 
-  .section-tag {
-    display: inline-block;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    background: var(--yellow);
-    border: 2px solid var(--fg);
-    border-radius: var(--wobbly-sm);
-    padding: 3px 16px;
-    transform: rotate(-2deg);
-    box-shadow: var(--shadow-sm);
-    margin-bottom: 14px;
-  }
+    ::selection { background: var(--accent); color: #fff; }
 
-  .section-title { font-size: clamp(1.9rem, 5vw, 3rem); margin-bottom: 10px; }
-  .section-sub { font-size: 1.15rem; color: #555; max-width: 62ch; }
+    :focus-visible {
+      outline: 3px dashed var(--pen);
+      outline-offset: 3px;
+    }
 
-  /* ================= NAVBAR ================= */
-  header.nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: rgba(253, 251, 247, 0.92);
-    backdrop-filter: blur(6px);
-    border-bottom: 2px dashed var(--fg);
-  }
-  .nav-inner {
-    max-width: var(--maxw);
-    margin: 0 auto;
-    padding: 12px 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-  }
-  .brand {
-    font-family: var(--font-head);
-    font-weight: 700;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .brand .dot {
-    width: 14px; height: 14px;
-    background: var(--accent);
-    border: 2px solid var(--fg);
-    border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
-    display: inline-block;
-  }
-  .nav-links { display: flex; align-items: center; gap: 22px; }
-  .nav-links a {
-    font-size: 1.1rem;
-    position: relative;
-    padding-bottom: 2px;
-  }
-  .nav-links a::after {
-    content: "";
-    position: absolute;
-    left: 0; bottom: -3px;
-    width: 0; height: 3px;
-    background: var(--accent);
-    border-radius: 3px;
-    transition: width 0.2s ease;
-  }
-  .nav-links a:hover::after,
-  .nav-links a:focus-visible::after { width: 100%; }
+    /* ============================== HELPERS ============================== */
+    .container {
+      width: 100%;
+      max-width: var(--maxw);
+      margin-inline: auto;
+      padding-inline: 22px;
+    }
 
-  .nav-toggle {
-    display: none;
-    background: var(--card);
-    border: 2px solid var(--fg);
-    border-radius: var(--wobbly-sm);
-    box-shadow: var(--shadow-sm);
-    font-family: var(--font-body);
-    font-size: 1.4rem;
-    line-height: 1;
-    padding: 8px 14px;
-    cursor: pointer;
-    color: var(--fg);
-  }
+    .section { padding: 72px 0; position: relative; }
 
-  /* ================= BUTTONS ================= */
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    font-family: var(--font-body);
-    font-size: 1.15rem;
-    padding: 12px 26px;
-    min-height: 48px;
-    background: var(--card);
-    color: var(--fg);
-    border: 3px solid var(--fg);
-    border-radius: var(--wobbly);
-    box-shadow: var(--shadow);
-    cursor: pointer;
-    transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.15s ease, color 0.15s ease;
-  }
-  .btn:hover {
-    background: var(--accent);
-    color: #fff;
-    box-shadow: var(--shadow-hover);
-    transform: translate(2px, 2px) rotate(-1deg);
-  }
-  .btn:active {
-    box-shadow: none;
-    transform: translate(4px, 4px);
-  }
-  .btn.secondary { background: var(--muted); }
-  .btn.secondary:hover { background: var(--blue); color: #fff; }
+    .eyebrow {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: .95rem;
+      background: var(--postit);
+      border: 2px solid var(--ink);
+      border-radius: var(--wobbly-sm);
+      padding: 4px 16px;
+      rotate: -2deg;
+      box-shadow: 2px 2px 0 0 var(--ink);
+      margin-bottom: 16px;
+    }
 
-  /* ================= HERO ================= */
-  .hero { padding-top: 56px; overflow: hidden; }
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 48px;
-    align-items: center;
-  }
-  .hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 1rem;
-    background: #fff;
-    border: 2px solid var(--fg);
-    border-radius: var(--wobbly-sm);
-    padding: 4px 14px;
-    box-shadow: var(--shadow-sm);
-    transform: rotate(-1.5deg);
-    margin-bottom: 18px;
-  }
-  .hero-badge .pulse {
-    width: 10px; height: 10px;
-    background: #34c759;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(52,199,89,0.2);
-    animation: pulse 2s infinite;
-  }
-  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+    .section-title {
+      font-size: clamp(2rem, 6vw, 3.3rem);
+      margin-bottom: 10px;
+    }
 
-  .hero h1 {
-    font-size: clamp(2.6rem, 8vw, 4.6rem);
-    margin-bottom: 8px;
-  }
-  .hero h1 .excl {
-    display: inline-block;
-    color: var(--accent);
-    animation: wiggle 3s ease-in-out infinite;
-  }
-  @keyframes wiggle {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(12deg); }
-    75% { transform: rotate(-10deg); }
-  }
-  .hero .role {
-    font-family: var(--font-head);
-    font-weight: 700;
-    font-size: clamp(1.3rem, 4vw, 1.9rem);
-    color: var(--blue);
-    margin-bottom: 16px;
-  }
-  .hero p.lead {
-    font-size: 1.2rem;
-    max-width: 52ch;
-    margin-bottom: 28px;
-  }
-  .hero-actions { display: flex; flex-wrap: wrap; gap: 16px; }
+    .section-sub {
+      font-size: 1.15rem;
+      color: #555;
+      max-width: 60ch;
+      margin-bottom: 40px;
+    }
 
-  .hero-visual { position: relative; }
-  .hero-card {
-    background: #fff;
-    border: 3px solid var(--fg);
-    border-radius: var(--wobbly);
-    box-shadow: var(--shadow-lg);
-    padding: 26px 24px;
-    transform: rotate(1.5deg);
-    position: relative;
-  }
-  .hero-card .tape {
-    position: absolute;
-    top: -14px; left: 50%;
-    transform: translateX(-50%) rotate(-2deg);
-    width: 110px; height: 28px;
-    background: rgba(45,45,45,0.14);
-    border-left: 2px dashed rgba(45,45,45,0.25);
-    border-right: 2px dashed rgba(45,45,45,0.25);
-  }
-  .hero-card .term {
-    font-family: var(--font-head);
-    font-size: 1.05rem;
-    background: var(--fg);
-    color: #fdfbf7;
-    border-radius: 14px 8px 14px 8px;
-    padding: 14px 16px;
-    line-height: 1.7;
-  }
-  .term .cmt { color: #9fb8e0; }
-  .term .str { color: #ffd45e; }
-  .term .key { color: #8fe388; }
-  .term .cur { display: inline-block; width: 9px; height: 1.1em; background: var(--accent); vertical-align: -2px; animation: blink 1s steps(1) infinite; }
-  @keyframes blink { 50% { opacity: 0; } }
+    .underline-wavy {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='12' viewBox='0 0 120 12'%3E%3Cpath d='M2 8 Q 16 2 30 8 T 58 8 T 86 8 T 114 8' fill='none' stroke='%23ff4d4d' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: repeat-x;
+      background-position: 0 100%;
+      background-size: 120px 10px;
+      padding-bottom: 8px;
+    }
 
-  .arrow-doodle { position: absolute; bottom: -34px; left: -10px; color: var(--accent); }
-  .bounce-dot {
-    position: absolute;
-    right: -14px; top: -18px;
-    width: 34px; height: 34px;
-    background: var(--yellow);
-    border: 3px solid var(--fg);
-    border-radius: 55% 45% 60% 40% / 45% 55% 45% 55%;
-    animation: bounce 3s ease-in-out infinite;
-  }
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-12px) rotate(12deg); }
-  }
+    /* ============================== BUTTONS ============================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: var(--font-body);
+      font-size: 1.15rem;
+      min-height: 52px;
+      padding: 10px 26px;
+      background: var(--white);
+      color: var(--ink);
+      border: 3px solid var(--ink);
+      border-radius: var(--wobbly-btn);
+      box-shadow: var(--shadow-hard);
+      cursor: pointer;
+      transition: transform .1s ease, box-shadow .1s ease, background .15s ease, color .15s ease;
+      text-align: center;
+    }
+    .btn:hover {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 2px 2px 0 0 var(--ink);
+      transform: translate(2px, 2px) rotate(-1deg);
+    }
+    .btn:active {
+      box-shadow: 0 0 0 0 var(--ink);
+      transform: translate(4px, 4px);
+    }
+    .btn--muted { background: var(--muted); }
+    .btn--muted:hover { background: var(--pen); color: #fff; }
+    .btn--block { width: 100%; }
 
-  /* ================= CARDS ================= */
-  .grid { display: grid; gap: 26px; }
-  .grid-2 { grid-template-columns: repeat(2, 1fr); }
-  .grid-3 { grid-template-columns: repeat(3, 1fr); }
-
-  .card {
-    background: var(--card);
-    border: 2.5px solid var(--fg);
-    border-radius: var(--wobbly-md);
-    box-shadow: var(--shadow-paper);
-    padding: 26px 24px;
-    position: relative;
-    transition: transform 0.12s ease, box-shadow 0.12s ease;
-  }
-  .card:hover {
-    transform: translate(-3px, -3px) rotate(1deg);
-    box-shadow: var(--shadow);
-  }
-  .card.tilt-1 { transform: rotate(-1deg); }
-  .card.tilt-2 { transform: rotate(1deg); }
-  .card.tilt-1:hover { transform: rotate(-1deg) translate(-3px,-3px); }
-  .card.tilt-2:hover { transform: rotate(1deg) translate(-3px,-3px); }
-
-  .card .tack {
-    position: absolute;
-    top: -13px; left: 50%;
-    transform: translateX(-50%);
-    width: 22px; height: 22px;
-    background: var(--accent);
-    border: 2px solid var(--fg);
-    border-radius: 50%;
-    box-shadow: 0 3px 0 rgba(45,45,45,0.35);
-  }
-  .card .tape {
-    position: absolute;
-    top: -13px; left: 50%;
-    transform: translateX(-50%) rotate(-2deg);
-    width: 90px; height: 26px;
-    background: rgba(45,45,45,0.13);
-  }
-
-  .card h3 { font-size: 1.65rem; margin-bottom: 8px; }
-  .card p { font-size: 1.08rem; color: #444; }
-
-  .feature { background: var(--yellow); }
-
-  .icon-badge {
-    width: 56px; height: 56px;
-    display: grid;
-    place-items: center;
-    background: #fff;
-    border: 2.5px solid var(--fg);
-    border-radius: 55% 45% 50% 50% / 50% 55% 45% 50%;
-    box-shadow: var(--shadow-sm);
-    margin-bottom: 16px;
-    transform: rotate(-3deg);
-  }
-  .icon-badge svg { stroke: var(--fg); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; fill: none; width: 28px; height: 28px; }
-
-  /* Skills lists */
-  .skill-block h3 { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
-  .chip-list { list-style: none; display: flex; flex-wrap: wrap; gap: 12px; }
-  .chip {
-    font-size: 1.05rem;
-    background: #fff;
-    border: 2px solid var(--fg);
-    border-radius: var(--wobbly-sm);
-    padding: 6px 16px;
-    box-shadow: var(--shadow-sm);
-    transition: transform 0.1s ease, background 0.15s ease, color 0.15s ease;
-  }
-  .chip:hover { transform: rotate(-3deg) scale(1.05); background: var(--yellow); }
-  .chip .lvl { font-size: 0.85rem; opacity: 0.6; }
-
-  /* Project cards */
-  .proj-status {
-    display: inline-block;
-    font-size: 0.92rem;
-    background: var(--accent);
-    color: #fff;
-    border: 2px solid var(--fg);
-    border-radius: var(--wobbly-sm);
-    padding: 2px 12px;
-    transform: rotate(-2deg);
-    margin-bottom: 12px;
-  }
-  .proj-focus { list-style: none; margin-top: 14px; display: grid; gap: 7px; }
-  .proj-focus li { display: flex; gap: 9px; align-items: flex-start; font-size: 1.05rem; }
-  .proj-focus li::before { content: "–"; color: var(--accent); font-weight: 700; }
-
-  /* Tech stack tree */
-  .stack-box {
-    background: var(--fg);
-    color: #fdfbf7;
-    border: 3px solid var(--fg);
-    border-radius: var(--wobbly);
-    box-shadow: var(--shadow-lg);
-    padding: 26px 28px;
-    font-family: var(--font-head);
-    font-size: 1.15rem;
-    line-height: 1.9;
-    white-space: pre;
-    overflow-x: auto;
-    transform: rotate(-0.6deg);
-  }
-  .stack-box .k { color: #ffd45e; }
-  .stack-box .v { color: #8fe388; }
-
-  /* Vision */
-  .vision {
-    background: var(--yellow);
-    border: 3px solid var(--fg);
-    border-radius: var(--wobbly);
-    box-shadow: var(--shadow-lg);
-    padding: 44px 32px;
-    text-align: center;
-    transform: rotate(-0.8deg);
-  }
-  .vision .quote { font-family: var(--font-head); font-weight: 700; font-size: clamp(1.5rem, 4.5vw, 2.4rem); margin-bottom: 14px; }
-  .vision .quote::before { content: "“"; color: var(--accent); }
-  .vision .quote::after { content: "”"; color: var(--accent); }
-
-  /* Contact / footer */
-  footer {
-    border-top: 3px dashed var(--fg);
-    padding: 44px 0 32px;
-    margin-top: 20px;
-  }
-  .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; align-items: flex-start; }
-  .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
-  .footer-links a { position: relative; }
-  .footer-links a:hover { text-decoration: line-through; color: var(--accent); }
-  .socials { display: flex; gap: 12px; }
-  .socials a {
-    width: 46px; height: 46px;
-    display: grid; place-items: center;
-    background: #fff;
-    border: 2.5px solid var(--fg);
-    border-radius: var(--wobbly-sm);
-    box-shadow: var(--shadow-sm);
-    transition: transform 0.1s ease, background 0.15s ease, color 0.15s ease;
-  }
-  .socials a:hover { transform: rotate(-5deg) translateY(-2px); background: var(--accent); color: #fff; }
-  .socials svg { width: 22px; height: 22px; fill: currentColor; }
-  .copyright { margin-top: 28px; font-size: 1rem; color: #666; text-align: center; }
-
-  /* Divider squiggle */
-  .squiggle { width: 120px; height: 16px; color: var(--accent); margin: 0 auto 8px; }
-
-  /* ================= SCROLL REVEAL ================= */
-  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
-  .reveal.in { opacity: 1; transform: none; }
-  @media (prefers-reduced-motion: reduce) {
-    * { animation: none !important; scroll-behavior: auto !important; }
-    .reveal { opacity: 1; transform: none; transition: none; }
-  }
-
-  /* ================= RESPONSIVE ================= */
-  @media (max-width: 840px) {
-    :root { --section-py: 52px; }
-    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
-    .hero-visual { order: -1; max-width: 460px; }
-    .grid-2, .grid-3 { grid-template-columns: 1fr; }
-    .nav-toggle { display: block; }
-    .nav-links {
+    /* ============================== NAV ============================== */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(253, 251, 247, .88);
+      backdrop-filter: blur(6px);
+      border-bottom: 3px solid var(--ink);
+    }
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 70px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-head);
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .brand__badge {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      background: var(--accent);
+      color: #fff;
+      border: 3px solid var(--ink);
+      border-radius: var(--wobbly-sm);
+      rotate: -4deg;
+      box-shadow: 2px 2px 0 0 var(--ink);
+    }
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+    .nav__links a {
+      position: relative;
+      font-size: 1.15rem;
+      padding-bottom: 3px;
+    }
+    .nav__links a::after {
+      content: "";
       position: absolute;
-      top: 100%; right: 16px; left: 16px;
+      left: 0; bottom: -2px;
+      width: 100%; height: 3px;
+      background: var(--accent);
+      border-radius: 2px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .18s ease;
+    }
+    .nav__links a:hover::after { transform: scaleX(1); }
+
+    .nav__toggle {
+      display: none;
       flex-direction: column;
-      align-items: stretch;
-      gap: 4px;
-      background: var(--card);
-      border: 3px solid var(--fg);
+      justify-content: center;
+      gap: 5px;
+      width: 48px; height: 48px;
+      padding: 11px 10px;
+      background: var(--white);
+      border: 3px solid var(--ink);
+      border-radius: var(--wobbly-sm);
+      box-shadow: 2px 2px 0 0 var(--ink);
+      cursor: pointer;
+    }
+    .nav__toggle span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: var(--ink);
+      border-radius: 3px;
+      transition: transform .2s ease, opacity .2s ease;
+    }
+    .nav.open .nav__toggle span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .nav.open .nav__toggle span:nth-child(2) { opacity: 0; }
+    .nav.open .nav__toggle span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    /* ============================== HERO ============================== */
+    .hero { padding: 72px 0 40px; position: relative; overflow: hidden; }
+    .hero__grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .hero__tag {
+      font-size: 1.05rem;
+      background: var(--muted);
+      border: 2px dashed var(--ink);
+      border-radius: var(--wobbly-sm);
+      padding: 5px 16px;
+      display: inline-block;
+      rotate: 1deg;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: clamp(2.6rem, 9vw, 5rem);
+      margin-bottom: 18px;
+    }
+    .hero h1 .accent { color: var(--accent); position: relative; display: inline-block; }
+    .hero h1 .bang {
+      display: inline-block;
+      color: var(--pen);
+      animation: bounce 3s ease-in-out infinite;
+    }
+    .hero p.lead {
+      font-size: 1.3rem;
+      max-width: 54ch;
+      margin-bottom: 28px;
+    }
+    .hero__cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+    .hero__status {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1rem;
+      padding: 5px 14px;
+      background: var(--white);
+      border: 2px solid var(--ink);
+      border-radius: var(--wobbly-sm);
+      box-shadow: 2px 2px 0 0 var(--ink);
+    }
+    .dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      border: 2px solid var(--ink);
+      background: var(--accent);
+    }
+    .dot--active { background: #3ec46d; }
+    .dot--inactive { background: var(--muted); }
+
+    /* Hero card / mugshot */
+    .hero__card {
+      position: relative;
+      background: var(--white);
+      border: 3px solid var(--ink);
+      border-radius: var(--wobbly-md);
+      box-shadow: var(--shadow-big);
+      padding: 30px 26px;
+      rotate: 1.5deg;
+      transition: rotate .2s ease;
+    }
+    .hero__card:hover { rotate: -1deg; }
+    .hero__card .tack {
+      position: absolute;
+      top: -16px; left: 50%;
+      width: 32px; height: 32px;
+      background: var(--accent);
+      border: 3px solid var(--ink);
+      border-radius: 50%;
+      transform: translateX(-50%);
+      box-shadow: 2px 2px 0 0 rgba(45,45,45,.3);
+    }
+    .hero__avatar {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 5rem;
+      line-height: 1;
+      display: grid;
+      place-items: center;
+      width: 132px; height: 132px;
+      margin: 0 auto 18px;
+      background: var(--postit);
+      border: 3px solid var(--ink);
+      border-radius: 42% 58% 55% 45% / 50% 45% 55% 50%;
+      box-shadow: var(--shadow-hard);
+    }
+    .hero__card h3 { text-align: center; font-size: 1.55rem; }
+    .hero__card .role { text-align: center; color: var(--pen); margin-bottom: 18px; }
+    .hero__stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .stat {
+      background: var(--paper);
+      border: 2px dashed var(--ink);
+      border-radius: var(--wobbly-sm);
+      padding: 12px 10px;
+      text-align: center;
+    }
+    .stat b { display: block; font-family: var(--font-head); font-size: 1.6rem; }
+    .stat span { font-size: .95rem; color: #555; }
+
+    /* decorative floating circle */
+    .float-dot {
+      position: absolute;
+      border: 3px solid var(--ink);
+      border-radius: 50%;
+      z-index: -1;
+    }
+    .float-dot.a { width: 70px; height: 70px; background: var(--postit); top: 30px; right: 6%; animation: bounce 4s ease-in-out infinite; }
+    .float-dot.b { width: 44px; height: 44px; background: var(--accent); bottom: 40px; left: 4%; animation: bounce 3.2s ease-in-out infinite reverse; }
+
+    /* ============================== CARDS / GRIDS ============================== */
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+
+    .card {
+      position: relative;
+      background: var(--white);
+      border: 3px solid var(--ink);
       border-radius: var(--wobbly-md);
       box-shadow: var(--shadow);
-      padding: 14px;
-      transform: translateY(-8px);
+      padding: 26px 24px;
+      transition: rotate .2s ease, box-shadow .2s ease, transform .2s ease;
+    }
+    .card:nth-child(odd)  { rotate: -1deg; }
+    .card:nth-child(even) { rotate: 1deg; }
+    .card:hover {
+      rotate: 0deg;
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow-big);
+    }
+    .card__tape {
+      position: absolute;
+      top: -12px; left: 50%;
+      width: 82px; height: 24px;
+      background: rgba(160, 160, 160, .35);
+      border: 1px solid rgba(45,45,45,.25);
+      transform: translateX(-50%) rotate(-3deg);
+    }
+    .card h3 { font-size: 1.45rem; margin-bottom: 8px; }
+    .card p { font-size: 1.08rem; }
+
+    .field__icon {
+      display: grid;
+      place-items: center;
+      width: 58px; height: 58px;
+      font-size: 1.7rem;
+      background: var(--postit);
+      border: 3px solid var(--ink);
+      border-radius: var(--wobbly-sm);
+      box-shadow: 2px 2px 0 0 var(--ink);
+      margin-bottom: 16px;
+      rotate: -3deg;
+    }
+    .status {
+      display: inline-block;
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      padding: 3px 12px;
+      border: 2px solid var(--ink);
+      border-radius: var(--wobbly-sm);
+      rotate: -1deg;
+      margin-bottom: 12px;
+    }
+    .status--active { background: #d7f5df; }
+    .status--inactive { background: var(--muted); }
+    .status--wip { background: var(--postit); }
+    .status--upcoming { background: #d9e8ff; }
+
+    /* ============================== ABOUT ============================== */
+    .about__grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .about__text p { font-size: 1.22rem; margin-bottom: 18px; }
+    .about__text .dropcap::first-letter {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 3.6rem;
+      float: left;
+      line-height: .8;
+      padding: 6px 12px 0 0;
+      color: var(--accent);
+    }
+
+    .goals {
+      background: var(--postit);
+      border: 3px solid var(--ink);
+      border-radius: var(--wobbly);
+      box-shadow: var(--shadow-hard);
+      padding: 28px 26px;
+      rotate: 1deg;
+    }
+    .goals h3 { font-size: 1.5rem; margin-bottom: 12px; }
+    .goals p { font-size: 1.1rem; }
+
+    /* ============================== LANGUAGES ============================== */
+    .lang-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .lang {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--white);
+      border: 3px solid var(--ink);
+      border-radius: var(--wobbly-sm);
+      box-shadow: var(--shadow);
+      padding: 16px 20px;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .lang:nth-child(even) { rotate: .8deg; }
+    .lang:nth-child(odd)  { rotate: -.8deg; }
+    .lang:hover { transform: translate(-2px, -2px); box-shadow: var(--shadow-hard); }
+    .lang b { font-family: var(--font-head); font-size: 1.35rem; }
+    .lang span { font-size: .98rem; color: #555; }
+
+    /* ============================== PROJECTS ============================== */
+    .project {
+      position: relative;
+      background: var(--white);
+      border: 3px solid var(--ink);
+      border-radius: var(--wobbly);
+      box-shadow: var(--shadow-hard);
+      padding: 30px 28px;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .project:nth-child(1) { rotate: -.8deg; }
+    .project:nth-child(2) { rotate: .8deg; }
+    .project:hover { rotate: 0deg; transform: translate(-2px,-2px); box-shadow: 12px 12px 0 0 var(--ink); }
+    .project__head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .project h3 { font-size: 1.8rem; }
+    .project .type { color: var(--pen); }
+    .project p { font-size: 1.1rem; margin: 12px 0; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .tag {
+      font-family: var(--font-body);
+      font-size: .95rem;
+      padding: 3px 12px;
+      background: var(--muted);
+      border: 2px solid var(--ink);
+      border-radius: var(--wobbly-sm);
+    }
+    .tag--code { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+    .project__focus { margin: 14px 0 0; }
+    .project__focus li {
+      font-size: 1.05rem;
+      padding-left: 26px;
+      position: relative;
+      margin-bottom: 4px;
+    }
+    .project__focus li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* ============================== FOCUS TREE ============================== */
+    .focus-panel {
+      background: var(--white);
+      border: 3px solid var(--ink);
+      border-radius: var(--wobbly);
+      box-shadow: var(--shadow-hard);
+      padding: 30px;
+      overflow-x: auto;
+    }
+    .focus-panel pre {
+      font-family: var(--font-head);
+      font-size: 1.15rem;
+      line-height: 1.9;
+      color: var(--ink);
+      white-space: pre;
+      margin: 0;
+    }
+    .focus-panel .k-active { color: #2f9e5b; font-weight: 700; }
+    .focus-panel .k-wip { color: #b8860b; font-weight: 700; }
+    .focus-panel .k-up { color: var(--pen); font-weight: 700; }
+    .focus-panel .k-in { color: #999; font-weight: 700; }
+
+    /* ============================== FOOTER ============================== */
+    .footer {
+      margin-top: 40px;
+      border-top: 3px dashed var(--ink);
+      padding: 50px 0 34px;
+      text-align: center;
+    }
+    .footer h2 { font-size: clamp(2rem, 7vw, 3.2rem); margin-bottom: 10px; }
+    .footer .role { color: var(--pen); font-size: 1.2rem; margin-bottom: 22px; }
+    .footer__links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      margin: 26px 0;
+    }
+    .footer__links a { font-size: 1.1rem; position: relative; }
+    .footer__links a:hover { text-decoration: line-through; color: var(--accent); }
+    .footer small { display: block; margin-top: 26px; color: #666; font-size: .95rem; }
+
+    /* ============================== SECTION DIVIDER ============================== */
+    .squiggle { display: block; width: 100%; height: 26px; margin: 0 auto; }
+
+    /* ============================== ANIMATIONS ============================== */
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    .reveal {
       opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.18s ease, transform 0.18s ease;
+      transform: translateY(28px);
+      transition: opacity .6s ease, transform .6s ease;
     }
-    .nav-links.open { opacity: 1; transform: translateY(6px); pointer-events: auto; }
-    .nav-links a { padding: 10px 8px; border-bottom: 1.5px dashed var(--muted); }
-    .nav-links a:last-child { border-bottom: none; }
-    .nav-links a::after { display: none; }
-    .arrow-doodle, .bounce-dot { display: none; }
-  }
+    .reveal.in { opacity: 1; transform: translateY(0); }
 
-  @media (max-width: 420px) {
-    body { font-size: 1.08rem; }
-    .container { padding: 0 18px; }
-    .btn { width: 100%; }
-    .hero-actions { flex-direction: column; }
-    .footer-inner { flex-direction: column; }
-  }
-</style>
-</head>
-<body>
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .reveal { opacity: 1; transform: none; }
+      html { scroll-behavior: auto; }
+    }
 
-<!-- ================= NAV ================= -->
-<header class="nav">
-  <nav class="nav-inner" aria-label="Navigasi utama">
-    <a href="#top" class="brand" aria-label="Hendra Developer - beranda">
-      <span class="dot" aria-hidden="true"></span> Hendra<span style="color:var(--accent)">.</span>
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Buka menu navigasi">☰</button>
-    <div class="nav-links" id="navLinks">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-    </div>
-  </nav>
-</header>
+    /* ============================== RESPONSIVE ============================== */
+    @media (max-width: 880px) {
+      .hero__grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero__card { max-width: 420px; margin-inline: auto; }
+      .about__grid { grid-template-columns: 1fr; gap: 32px; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .float-dot { display: none; }
+    }
 
-<main id="top">
-
-  <!-- ================= HERO ================= -->
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-text">
-          <span class="hero-badge"><span class="pulse" aria-hidden="true"></span> Active Developer</span>
-          <h1 id="hero-title">Hai, saya Hendra<span class="excl" aria-hidden="true">!</span></h1>
-          <p class="role">Frontend &amp; Backend Developer</p>
-          <p class="lead">
-            Saya membangun aplikasi dan website dari sisi <strong>frontend</strong> maupun
-            <strong>backend</strong> — sederhana, efisien, dan mampu menyelesaikan masalah nyata.
-          </p>
-          <div class="hero-actions">
-            <a class="btn" href="#projects">Lihat Projects →</a>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-card">
-            <span class="tape" aria-hidden="true"></span>
-            <span class="bounce-dot" aria-hidden="true"></span>
-            <div class="term" role="img" aria-label="Contoh kode profil Hendra">
-<span class="cmt">// profile.js</span>
-<span class="key">const</span> hendra = {
-  role: <span class="str">"Developer"</span>,
-  focus: [<span class="str">"Frontend"</span>, <span class="str">"Backend"</span>],
-  stack: [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JS"</span>, <span class="str">"Python"</span>],
-  motto: <span class="str">"solve real problems"</span>
-};<span class="cur" aria-hidden="true"></span></div>
-            <svg class="arrow-doodle" width="90" height="60" viewBox="0 0 90 60" fill="none" aria-hidden="true">
-              <path d="M4 8C18 34 40 46 74 44" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6"/>
-              <path d="M62 34l14 10-16 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= ABOUT ================= -->
-  <section id="about" aria-labelledby="about-title">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-tag">About Me</span>
-        <h2 class="section-title" id="about-title">Tentang Saya</h2>
-        <p class="section-sub">
-          Saya developer yang fokus pada pengembangan aplikasi dan website, baik frontend maupun
-          backend. Saya tertarik membangun aplikasi yang tidak hanya berfungsi dengan baik, tetapi
-          juga membantu menyelesaikan masalah nyata dalam kehidupan sehari-hari.
-        </p>
-      </div>
-
-      <ul class="grid grid-3" style="margin-top:32px; list-style:none;">
-        <li class="card tilt-1 reveal" style="animation-delay:.05s">
-          <div class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7V19h8v-4.3A7 7 0 0 0 12 2Z"/><path d="M9 21h6"/></svg></div>
-          <h3>Nama</h3><p>Hendra</p>
-        </li>
-        <li class="card tilt-2 reveal" style="animation-delay:.1s">
-          <div class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 6-5 6 5 6M16 6l5 6-5 6M14 4l-4 16"/></svg></div>
-          <h3>Role</h3><p>Developer</p>
-        </li>
-        <li class="card tilt-1 reveal" style="animation-delay:.15s">
-          <div class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-          <h3>Status</h3><p>Active Developer</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ================= SKILLS ================= -->
-  <section id="skills" aria-labelledby="skills-title">
-    <div class="container">
-      <div class="reveal" style="text-align:center">
-        <svg class="squiggle" viewBox="0 0 120 16" fill="none" aria-hidden="true"><path d="M2 8c8-10 16 10 24 0s16-10 24 0 16 10 24 0 16-10 24 0" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
-        <span class="section-tag">Keahlian</span>
-        <h2 class="section-title" id="skills-title">Skills</h2>
-        <p class="section-sub" style="margin:0 auto">
-          Terus mengembangkan kemampuan di bidang frontend dan backend untuk membangun aplikasi yang
-          sederhana, efisien, dan mudah digunakan.
-        </p>
-      </div>
-
-      <div class="grid grid-2" style="margin-top:34px">
-        <div class="card feature tilt-1 reveal">
-          <span class="tape" aria-hidden="true"></span>
-          <div class="skill-block">
-            <h3><span aria-hidden="true">🎨</span> Frontend</h3>
-            <ul class="chip-list">
-              <li class="chip">HTML</li>
-              <li class="chip">CSS</li>
-              <li class="chip">JavaScript</li>
-            </ul>
-          </div>
-        </div>
-        <div class="card tilt-2 reveal">
-          <span class="tack" aria-hidden="true"></span>
-          <div class="skill-block">
-            <h3><span aria-hidden="true">⚙️</span> Backend</h3>
-            <ul class="chip-list">
-              <li class="chip">Python</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= PROJECTS ================= -->
-  <section id="projects" aria-labelledby="projects-title">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-tag">Portfolio</span>
-        <h2 class="section-title" id="projects-title">Projects</h2>
-        <p class="section-sub">Beberapa aplikasi yang saya bangun untuk menyelesaikan masalah nyata.</p>
-      </div>
-
-      <div class="grid grid-3" style="margin-top:34px">
-        <article class="card tilt-1 reveal">
-          <span class="tape" aria-hidden="true"></span>
-          <h3>Mesin Kasir</h3>
-          <p>Aplikasi mesin kasir yang dibuat untuk membantu proses transaksi dan pencatatan penjualan.</p>
-          <ul class="proj-focus">
-            <li>Transaksi penjualan</li>
-            <li>Pencatatan data</li>
-            <li>Pengelolaan transaksi</li>
-          </ul>
-        </article>
-
-        <article class="card tilt-2 reveal">
-          <span class="tack" aria-hidden="true"></span>
-          <h3>Aplikasi Manajemen Uang</h3>
-          <p>Aplikasi untuk membantu pengguna mengelola keuangan dengan lebih teratur.</p>
-          <ul class="proj-focus">
-            <li>Pencatatan pemasukan</li>
-            <li>Pencatatan pengeluaran</li>
-            <li>Pengelolaan keuangan</li>
-          </ul>
-        </article>
-
-        <article class="card tilt-1 reveal">
-          <span class="tape" aria-hidden="true"></span>
-          <span class="proj-status">In Development</span>
-          <h3>Sistem Manajemen Kost</h3>
-          <p>Sistem untuk membantu pemilik kost mengelola pembayaran penghuni tanpa perlu menagih berulang.</p>
-          <ul class="proj-focus">
-            <li>Manajemen data penghuni &amp; kamar</li>
-            <li>Pencatatan &amp; status pembayaran</li>
-            <li>Pengingat &amp; riwayat pembayaran</li>
-            <li>Dashboard pemilik kost</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= VISION ================= -->
-  <section aria-labelledby="vision-title">
-    <div class="container">
-      <div class="vision reveal">
-        <span class="section-tag">Vision</span>
-        <h2 class="quote" id="vision-title">Build technology that solves real problems.</h2>
-        <p class="section-sub" style="margin:0 auto">
-          Saya ingin terus mengembangkan aplikasi yang sederhana, berguna, dan mampu memberikan
-          solusi terhadap permasalahan nyata.
-        </p>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer>
-  <div class="container">
-    <div class="footer-inner">
-      <a href="#top" class="brand" aria-label="Hendra Developer - beranda">
-        <span class="dot" aria-hidden="true"></span> Hendra<span style="color:var(--accent)">.</span>
-      </a>
-      <div class="footer-links" aria-label="Tautan cepat">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-      </div>
-    </div>
-    <p class="copyright">
-      © <span id="year"></span> <strong>HENDRA Developer</strong> — Frontend &amp; Backend Developer.
-    </p>
-  </div>
-</footer>
-
-<script>
-  // ===== Mobile nav toggle =====
-  (function () {
-    var toggle = document.getElementById('navToggle');
-    var links = document.getElementById('navLinks');
-    if (!toggle || !links) return;
-
-    toggle.addEventListener('click', function () {
-      var open = links.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(open));
-      toggle.textContent = open ? '✕' : '☰';
-      toggle.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
-    });
-
-    links.addEventListener('click', function (e) {
-      if (e.target.tagName === 'A' && links.classList.contains('open')) {
-        links.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-        toggle.textContent = '☰';
+    @media (max-width: 760px) {
+      body { font-size: 1.1rem; }
+      .section { padding: 56px 0; }
+      .nav__links {
+        position: fixed;
+        inset: 70px 0 auto 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: var(--paper);
+        border-bottom: 3px solid var(--ink);
+        padding: 10px 22px 22px;
+        transform: translateY(-130%);
+        transition: transform .25s ease;
+        box-shadow: var(--shadow-big);
       }
-    });
-  })();
-
-  // ===== Scroll reveal =====
-  (function () {
-    var items = document.querySelectorAll('.reveal');
-    if (!('IntersectionObserver' in window)) {
-      items.forEach(function (el) { el.classList.add('in'); });
-      return;
+      .nav.open .nav__links { transform: translateY(0); }
+      .nav__links a {
+        padding: 15px 6px;
+        border-bottom: 2px dashed var(--muted);
+        font-size: 1.25rem;
+      }
+      .nav__toggle { display: flex; }
+      .grid-2, .lang-list { grid-template-columns: 1fr; }
+      .hero__stats { grid-template-columns: repeat(2, 1fr); }
     }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    items.forEach(function (el) { io.observe(el); });
-  })();
 
-  // ===== Dynamic year =====
-  (function () {
-    var y = document.getElementById('year');
-    if (y) y.textContent = new Date().getFullYear();
-  })();
-</script>
-</body>
-</html>
+    @media (max-width: 420px) {
+      .container { padding-inline: 16px; }
+      .hero__cta .btn { width: 100%; }
+      .hero__avatar { width: 108px; height: 108px; font-size: 4rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="Bagas Wisnaya Dev - beranda">
+        <span class="brand__badge" aria-hidden="true">B</span>
+        <span>Bagas Wisnaya</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navigasi utama">
+        <a href="#about">Tentang</a>
+        <a href="#fields">Bidang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#projects">Proyek</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <span class="float-dot a" aria-hidden="true"></span>
+      <span class="float-dot b" aria-hidden="true"></span>
+      <div class="container hero__grid">
+        <div>
+          <span class="hero__tag">2D Game Developer • IoT Tinkerer • Minecraft Modder</span>
+          <h1 id="hero-title">
+            Halo, saya <span class="accent underline-wavy">Bagas</span><br>
+            Wisnaya<span class="bang" aria-hidden="true">!</span>
+          </h1>
+          <p class="lead">
+            Kerap dikenal dengan nama <strong>Soy Sauce</strong>, saya seorang solo-developer yang aktif di bidang  <strong>Game Development, IoT &amp; Hardware Tinkering</strong>, serta pengembangan
+            <strong>Mod Minecraft</strong>. Saya suka mewujudkan sekaligus menggabungkan ide-ide gila yang terselip di pikiran.</p>
+          <div class="hero__cta">
+            <a class="btn" href="#projects">Lihat Proyek →</a>
+            <a class="btn btn--muted" href="#about">Kenali Saya</a>
+          </div>
+          <div class="hero__status" aria-label="Status bidang keahlian">
+            <span class="chip"><span class="dot dot--active" aria-hidden="true"></span> 2D Game Dev — Active</span>
+            <span class="chip"><span class="dot dot--active" aria-hidden="true"></span> IoT &amp; MCC — Active</span>
+          </div>
+        </div>
+
+        <aside class="hero__card" aria-label="Kartu profil singkat">
+          <span class="tack" aria-hidden="true"></span>
+          <div class="hero__avatar" aria-hidden="true">B</div>
+          <h3>Bagas Wisnaya (Soy Sauce)</h3>
+          <p class="role">Game Developer • Tinkerer</p>
+          <div class="hero__stats">
+            <div class="stat"><b>4</b><span>Menguasai Bahasa</span></div>
+            <div class="stat"><b>2</b><span>Bidang Aktif</span></div>
+            <div class="stat"><b>2</b><span>Proyek</span></div>
+            <div class="stat"><b>∞</b><span>Ide &amp; Eksperimen</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <svg class="squiggle" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 12 Q 40 0 80 12 T 160 12 T 240 12 T 320 12 T 400 12 T 480 12 T 560 12 T 640 12 T 720 12 T 800 12 T 880 12 T 960 12 T 1040 12 T 1120 12 T 1200 12" fill="none" stroke="#2d2d2d" stroke-width="2.5" stroke-dasharray="10 8" stroke-linecap="round"></path>
+    </svg>
+
+    <!-- ============================== ABOUT ============================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__text reveal in" style="transition-delay: 0s;">
+          <span class="eyebrow">Tentang Saya</span>
+          <h2 class="section-title" id="about-title">Sketsa <span class="underline-wavy">Singkat</span></h2>
+          <p class="dropcap">
+            Saya <strong>Bagas Wisnaya</strong>, seorang solo-developer yang sangat tertarik dengan 2D Game Development &amp; Design, eksperimen IoT &amp; Hardware, serta pengembangan Fabric Mod untuk Minecraft Java.</p>
+          <p>Saat ini saya aktif mengembangkan proyek 2D Game dan bereksperimen dengan hardware untuk mewujudkan sekaligus cara saya mengekspresikan perasaan pribadi. Bagi saya, keinginan untuk mencari tahu adalah kunci untuk berkembang. Meskipun ide saya cukup aneh, mengapa tidak mewujudkan dan membagikannya ke dunia? ^^</p>
+        </div>
+
+        <aside class="goals reveal in" style="transition-delay: 0.08s;">
+          <h3>🎯 Tujuan</h3>
+          <p>Selalu penasaran dan terus mengasah kemampuan di bidang  <strong>Game Development, Hardware &amp; IoT Programming </strong>dengan menciptakan proyek pribadi yang relevan dan unik untuk dunia.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================== FIELDS ============================== -->
+    <section class="section" id="fields" aria-labelledby="fields-title">
+      <div class="container">
+        <span class="eyebrow">Bidang</span>
+        <h2 class="section-title" id="fields-title">Yang Saya <span class="underline-wavy">Tekuni</span></h2>
+        <p class="section-sub">Tiga bidang favorit saya saat ini.</p>
+
+        <div class="grid-3">
+          <article class="card reveal in" style="transition-delay: 0.16s;">
+            <span class="card__tape" aria-hidden="true"></span>
+            <div class="field__icon" aria-hidden="true">🎮</div>
+            <span class="status status--active">Active</span>
+            <h3>2D Game Development</h3>
+            <p>Menuangkan perasaan dan ide gila saya pada pengembangan game 2D. Selalu mengutamakan Optimisasi dan Game Design untuk menciptakan karya saya yang unik, namun bisa dinikmati oleh semua perangkat.</p>
+          </article>
+
+          <article class="card reveal in" style="transition-delay: 0s;">
+            <span class="card__tape" aria-hidden="true"></span>
+            <div class="field__icon" aria-hidden="true">🔌</div>
+            <span class="status status--active">Active</span>
+            <h3>IoT &amp; MCC Tinkering</h3>
+            <p>Penasaran dan suka bereksperimen dengan Hardware, Microcontroller, kelistrikan, dan struktur yang baik untuk mewujudkan berbagai proyek elektronik yang interaktif.</p>
+          </article>
+
+          <article class="card reveal in" style="transition-delay: 0.08s;">
+            <span class="card__tape" aria-hidden="true"></span>
+            <div class="field__icon" aria-hidden="true">⛏️</div>
+            <span class="status status--inactive">Inactive</span>
+            <h3>Minecraft Java Fabric Modding</h3>
+            <p>Pengembangan dan eksperimen mod Minecraft Java menggunakan <strong>Fabric API</strong> dan Server Engineering dengan <strong>Bukkit</strong>.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== SKILLS ============================== -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <span class="eyebrow">Keahlian</span>
+        <h2 class="section-title" id="skills-title">Bahasa <span class="underline-wavy">Pemrograman</span></h2>
+        <p class="section-sub">Alat yang saya gunakan untuk membangun game, perangkat, dan mod.</p>
+
+        <div class="lang-list">
+          <div class="lang reveal in" style="transition-delay: 0.16s;"><span><b>Java</b><br><span>Minecraft Mods, Server, and LibGDX Engine</span></span><span class="tag tag--code">Fabric</span></div>
+          <div class="lang reveal in" style="transition-delay: 0s;"><span><b>C++</b><br><span>IoT &amp; Hardware</span></span><span class="tag tag--code">Embedded</span></div>
+          <div class="lang reveal in" style="transition-delay: 0.08s;"><span><b>GDScript</b><br><span>2D Game Development</span></span><span class="tag tag--code">Godot</span></div>
+          <div class="lang reveal in" style="transition-delay: 0.16s;"><span><b>C#</b><br><span>Game Development &amp; Modding</span></span><span class="tag tag--code">.NET</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PROJECTS ============================== -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <span class="eyebrow">Proyek</span>
+        <h2 class="section-title" id="projects-title">Yang Sedang <span class="underline-wavy">Dikerjakan</span></h2>
+        <p class="section-sub">Sebagian proyek masih berupa catatan di kertas — dan itu tidak apa-apa.</p>
+
+        <div class="grid-2">
+          <article class="project reveal in" style="transition-delay: 0s;">
+            <div class="project__head">
+              <h3>Left a Letter</h3>
+              <span class="status status--wip">WIP</span>
+            </div>
+            <p class="type">2D Game</p>
+            <p>Menceritakan perjalanan psikologis seorang perempuan yang dicintai oleh seseorang. Dipisahkan oleh ruang dan waktu bukanlah keterbatasan baginya, tapi bagaimana cara untuk sama-sama mempertahankan dan mewujudkan rumah yang diinginkan itu.</p>
+            <ul class="project__focus">
+              <li>Story &amp; Game Design</li>
+              <li>Game Mechanics</li>
+              <li>Optimizations &amp; Code Architecture</li>
+              <li>Basic Godot Knowledge</li>
+            </ul>
+            <div class="tags" aria-label="Teknologi">
+              <span class="tag tag--code">GDScript</span>
+              <span class="tag">Godot</span>
+            </div>
+          </article>
+
+          <article class="project reveal in" style="transition-delay: 0.08s;">
+            <div class="project__head">
+              <h3>DIY Pump It Up Pad Controller</h3>
+              <span class="status status--upcoming">Upcoming</span>
+            </div>
+            <p class="type">Arcade Controller</p>
+            <p>Rekayasa ulang dari arcade <strong>Pump It Up</strong> sebagai proyek hiburan pribadi. Berfokus pada eksperimen Hardware, kelistrikan, IO System, integrasi Microcontroller &amp; USB device communication.</p>
+            <ul class="project__focus">
+              <li>Custom Arcade Controller</li>
+              <li>Hardware &amp; Electrical Tinkering</li>
+              <li>IO System</li>
+              <li>Microcontroller &amp; DIY Electronics</li>
+            </ul>
+            <div class="tags" aria-label="Teknologi">
+              <span class="tag tag--code">C++</span>
+              <span class="tag">Arduino</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CURRENT FOCUS ============================== -->
+    <section class="section" id="focus" aria-labelledby="focus-title">
+      <div class="container">
+        <span class="eyebrow">Current Focus</span>
+        <h2 class="section-title" id="focus-title">Papan <span class="underline-wavy">Status</span></h2>
+        <p class="section-sub">Ringkasan apa yang aktif, sedang dikerjakan, dan yang sudah tidak aktif.</p>
+
+        <div class="focus-panel reveal in" style="transition-delay: 0.16s;">
+<pre aria-label="Diagram status fokus"><span class="k-active">ACTIVE</span>
+├── 2D Game Development
+└── IoT &amp; MCC Tinkering
+
+<span class="k-wip">WIP</span>
+└── Left a Letter
+
+<span class="k-up">UPCOMING</span>
+└── DIY Pump It Up Pad Controller
+
+<span class="k-in">INACTIVE</span>
+└── Minecraft Java Fabric Modding</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== FOOTER ============================== -->
+    <footer class="footer" aria-label="Penutup">
+      <div class="container">
+        <h2>Bagas <span class="underline-wavy">Wisnaya</span></h2>
+        <p class="role">Game Developer • IoT Tinkerer • Minecraft Modder</p>
+        <p>Game adalah cara yang indah untuk mengekspresikan sesuatu.</p>
+
+        <nav class="footer__links" aria-label="Navigasi footer">
+          <a href="#about">Tentang</a>
+          <a href="#fields">Bidang</a>
+          <a href="#skills">Keahlian</a>
+          <a href="#projects">Proyek</a>
+        </nav>
+
+        <small>© <span id="year">2026</span> Bagas Wisnaya (Soy Sauce)</small>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ============================== SCRIPTS ============================== -->
+  <script>
+    (function () {
+      "use strict";
+
+      /* ---- Mobile navigation ---- */
+      var nav = document.getElementById("nav");
+      var toggle = document.getElementById("navToggle");
+      var links = document.getElementById("navLinks");
+
+      function closeNav() {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Buka menu navigasi");
+      }
+
+      toggle.addEventListener("click", function () {
+        var open = nav.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", String(open));
+        toggle.setAttribute("aria-label", open ? "Tutup menu navigasi" : "Buka menu navigasi");
+      });
+
+      links.addEventListener("click", function (e) {
+        if (e.target.tagName === "A") closeNav();
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeNav();
+      });
+
+      /* ---- Scroll reveal ---- */
+      var reveals = document.querySelectorAll(".reveal");
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in");
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+        reveals.forEach(function (el, i) {
+          el.style.transitionDelay = (i % 3) * 0.08 + "s";
+          io.observe(el);
+        });
+      } else {
+        reveals.forEach(function (el) { el.classList.add("in"); });
+      }
+
+      /* ---- Current year ---- */
+      document.getElementById("year").textContent = new Date().getFullYear();
+    })();
+  </script>
+
+
+</body></html>
