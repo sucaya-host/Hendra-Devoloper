@@ -1,0 +1,23 @@
+# robots.txt — Hendra Developer Portfolio
+# Ganti domain di bawah dengan domain asli setelah deploy.
+
+User-agent: *
+Allow: /
+
+# Perbolehkan crawler AI mengindeks konten (opsional, hapus jika ingin memblokir)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://hendra-portfolio.example.com/sitemap.xml

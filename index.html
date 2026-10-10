@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#fdfbf7" />
+
+<!-- ============ PRIMARY SEO ============ -->
+<title>Hendra — Frontend &amp; Backend Developer | Portfolio</title>
+<meta name="description" content="Hendra adalah Frontend & Backend Developer yang membangun aplikasi dan website: Mesin Kasir, Aplikasi Manajemen Uang, dan Sistem Manajemen Kost. Tech stack: HTML, CSS, JavaScript, Python." />
+<meta name="keywords" content="Hendra, frontend developer, backend developer, web developer, portfolio, HTML, CSS, JavaScript, Python, mesin kasir, aplikasi keuangan, sistem manajemen kost" />
+<meta name="author" content="Hendra" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="googlebot" content="index, follow" />
+<link rel="canonical" href="https://hendra-portfolio.example.com/" />
+
+<!-- ============ OPEN GRAPH (Facebook / WhatsApp / LinkedIn) ============ -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Hendra Developer" />
+<meta property="og:title" content="Hendra — Frontend & Backend Developer" />
+<meta property="og:description" content="Portfolio Hendra. Membangun aplikasi yang sederhana, efisien, dan menyelesaikan masalah nyata. Frontend & Backend Development." />
+<meta property="og:url" content="https://hendra-portfolio.example.com/" />
+<meta property="og:locale" content="id_ID" />
+<meta property="og:image" content="https://hendra-portfolio.example.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Hendra — Frontend & Backend Developer" />
+
+<!-- ============ TWITTER / X ============ -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Hendra — Frontend & Backend Developer" />
+<meta name="twitter:description" content="Portfolio Hendra. Frontend & Backend Development. Build technology that solves real problems." />
+<meta name="twitter:image" content="https://hendra-portfolio.example.com/og-image.png" />
+
+<!-- ============ FONTS ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet" />
+
+<!-- ============ FAVICON (inline SVG, no external file) ============ -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='8' y='8' width='84' height='84' rx='22' fill='%23fdfbf7' stroke='%232d2d2d' stroke-width='6'/%3E%3Ctext x='50' y='70' font-family='Comic Sans MS, cursive' font-size='58' font-weight='700' text-anchor='middle' fill='%23ff4d4d'%3EH%3C/text%3E%3C/svg%3E" />
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='8' y='8' width='84' height='84' rx='22' fill='%23fdfbf7' stroke='%232d2d2d' stroke-width='6'/%3E%3Ctext x='50' y='70' font-family='Comic Sans MS, cursive' font-size='58' font-weight='700' text-anchor='middle' fill='%23ff4d4d'%3EH%3C/text%3E%3C/svg%3E" />
+
+<!-- ============ STRUCTURED DATA (Google + AI) ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hendra",
+  "url": "https://hendra-portfolio.example.com/",
+  "jobTitle": "Frontend & Backend Developer",
+  "description": "Frontend & Backend Developer yang membangun aplikasi dan website untuk menyelesaikan masalah nyata.",
+  "knowsAbout": ["HTML", "CSS", "JavaScript", "Python", "Frontend Development", "Backend Development"],
+  "knowsLanguage": ["id", "en"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Hendra Developer Portfolio",
+  "url": "https://hendra-portfolio.example.com/",
+  "inLanguage": "id-ID",
+  "description": "Portfolio pribadi Hendra, Frontend & Backend Developer."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Projects by Hendra",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "item": {
+      "@type": "SoftwareApplication", "name": "Mesin Kasir",
+      "applicationCategory": "BusinessApplication",
+      "description": "Aplikasi mesin kasir untuk transaksi penjualan dan pencatatan data."
+    }},
+    { "@type": "ListItem", "position": 2, "item": {
+      "@type": "SoftwareApplication", "name": "Aplikasi Manajemen Uang",
+      "applicationCategory": "FinanceApplication",
+      "description": "Aplikasi pengelolaan keuangan untuk mencatat pemasukan dan pengeluaran."
+    }},
+    { "@type": "ListItem", "position": 3, "item": {
+      "@type": "SoftwareApplication", "name": "Sistem Manajemen Kost",
+      "applicationCategory": "BusinessApplication",
+      "description": "Sistem manajemen kost untuk mengelola penghuni, kamar, dan pembayaran."
+    }}
+  ]
+}
+</script>
+
+<style>
+  /* ================= DESIGN TOKENS ================= */
+  :root {
+    --bg: #fdfbf7;
+    --fg: #2d2d2d;
+    --muted: #e5e0d8;
+    --accent: #ff4d4d;
+    --blue: #2d5da1;
+    --yellow: #fff9c4;
+    --card: #ffffff;
+    --paper-dot: #e5e0d8;
+
+    --wobbly: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    --wobbly-md: 125px 10px 115px 10px / 10px 115px 10px 125px;
+    --wobbly-sm: 60px 8px 55px 8px / 8px 55px 8px 60px;
+
+    --shadow: 4px 4px 0 0 var(--fg);
+    --shadow-sm: 3px 3px 0 0 var(--fg);
+    --shadow-paper: 3px 3px 0 0 rgba(45, 45, 45, 0.12);
+    --shadow-lg: 8px 8px 0 0 var(--fg);
+    --shadow-hover: 2px 2px 0 0 var(--fg);
+
+    --font-head: 'Kalam', 'Comic Sans MS', cursive;
+    --font-body: 'Patrick Hand', 'Comic Sans MS', cursive;
+
+    --maxw: 1000px;
+    --section-py: 72px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--fg);
+    background-color: var(--bg);
+    background-image: radial-gradient(var(--paper-dot) 1px, transparent 1px);
+    background-size: 24px 24px;
+    line-height: 1.65;
+    font-size: 1.15rem;
+    overflow-x: hidden;
+  }
+
+  img, svg { max-width: 100%; display: block; }
+
+  a { color: inherit; text-decoration: none; }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-head);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection { background: var(--accent); color: #fff; }
+
+  :focus-visible {
+    outline: 3px dashed var(--blue);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  /* ================= LAYOUT ================= */
+  .container {
+    width: 100%;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  section { padding: var(--section-py) 0; position: relative; }
+
+  .section-tag {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    background: var(--yellow);
+    border: 2px solid var(--fg);
+    border-radius: var(--wobbly-sm);
+    padding: 3px 16px;
+    transform: rotate(-2deg);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 14px;
+  }
+
+  .section-title { font-size: clamp(1.9rem, 5vw, 3rem); margin-bottom: 10px; }
+  .section-sub { font-size: 1.15rem; color: #555; max-width: 62ch; }
+
+  /* ================= NAVBAR ================= */
+  header.nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(253, 251, 247, 0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 2px dashed var(--fg);
+  }
+  .nav-inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .brand {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .brand .dot {
+    width: 14px; height: 14px;
+    background: var(--accent);
+    border: 2px solid var(--fg);
+    border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+    display: inline-block;
+  }
+  .nav-links { display: flex; align-items: center; gap: 22px; }
+  .nav-links a {
+    font-size: 1.1rem;
+    position: relative;
+    padding-bottom: 2px;
+  }
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: -3px;
+    width: 0; height: 3px;
+    background: var(--accent);
+    border-radius: 3px;
+    transition: width 0.2s ease;
+  }
+  .nav-links a:hover::after,
+  .nav-links a:focus-visible::after { width: 100%; }
+
+  .nav-toggle {
+    display: none;
+    background: var(--card);
+    border: 2px solid var(--fg);
+    border-radius: var(--wobbly-sm);
+    box-shadow: var(--shadow-sm);
+    font-family: var(--font-body);
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: 8px 14px;
+    cursor: pointer;
+    color: var(--fg);
+  }
+
+  /* ================= BUTTONS ================= */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--font-body);
+    font-size: 1.15rem;
+    padding: 12px 26px;
+    min-height: 48px;
+    background: var(--card);
+    color: var(--fg);
+    border: 3px solid var(--fg);
+    border-radius: var(--wobbly);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.15s ease, color 0.15s ease;
+  }
+  .btn:hover {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: var(--shadow-hover);
+    transform: translate(2px, 2px) rotate(-1deg);
+  }
+  .btn:active {
+    box-shadow: none;
+    transform: translate(4px, 4px);
+  }
+  .btn.secondary { background: var(--muted); }
+  .btn.secondary:hover { background: var(--blue); color: #fff; }
+
+  /* ================= HERO ================= */
+  .hero { padding-top: 56px; overflow: hidden; }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    background: #fff;
+    border: 2px solid var(--fg);
+    border-radius: var(--wobbly-sm);
+    padding: 4px 14px;
+    box-shadow: var(--shadow-sm);
+    transform: rotate(-1.5deg);
+    margin-bottom: 18px;
+  }
+  .hero-badge .pulse {
+    width: 10px; height: 10px;
+    background: #34c759;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(52,199,89,0.2);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+  .hero h1 {
+    font-size: clamp(2.6rem, 8vw, 4.6rem);
+    margin-bottom: 8px;
+  }
+  .hero h1 .excl {
+    display: inline-block;
+    color: var(--accent);
+    animation: wiggle 3s ease-in-out infinite;
+  }
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(12deg); }
+    75% { transform: rotate(-10deg); }
+  }
+  .hero .role {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: clamp(1.3rem, 4vw, 1.9rem);
+    color: var(--blue);
+    margin-bottom: 16px;
+  }
+  .hero p.lead {
+    font-size: 1.2rem;
+    max-width: 52ch;
+    margin-bottom: 28px;
+  }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 16px; }
+
+  .hero-visual { position: relative; }
+  .hero-card {
+    background: #fff;
+    border: 3px solid var(--fg);
+    border-radius: var(--wobbly);
+    box-shadow: var(--shadow-lg);
+    padding: 26px 24px;
+    transform: rotate(1.5deg);
+    position: relative;
+  }
+  .hero-card .tape {
+    position: absolute;
+    top: -14px; left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 110px; height: 28px;
+    background: rgba(45,45,45,0.14);
+    border-left: 2px dashed rgba(45,45,45,0.25);
+    border-right: 2px dashed rgba(45,45,45,0.25);
+  }
+  .hero-card .term {
+    font-family: var(--font-head);
+    font-size: 1.05rem;
+    background: var(--fg);
+    color: #fdfbf7;
+    border-radius: 14px 8px 14px 8px;
+    padding: 14px 16px;
+    line-height: 1.7;
+  }
+  .term .cmt { color: #9fb8e0; }
+  .term .str { color: #ffd45e; }
+  .term .key { color: #8fe388; }
+  .term .cur { display: inline-block; width: 9px; height: 1.1em; background: var(--accent); vertical-align: -2px; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  .arrow-doodle { position: absolute; bottom: -34px; left: -10px; color: var(--accent); }
+  .bounce-dot {
+    position: absolute;
+    right: -14px; top: -18px;
+    width: 34px; height: 34px;
+    background: var(--yellow);
+    border: 3px solid var(--fg);
+    border-radius: 55% 45% 60% 40% / 45% 55% 45% 55%;
+    animation: bounce 3s ease-in-out infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-12px) rotate(12deg); }
+  }
+
+  /* ================= CARDS ================= */
+  .grid { display: grid; gap: 26px; }
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+
+  .card {
+    background: var(--card);
+    border: 2.5px solid var(--fg);
+    border-radius: var(--wobbly-md);
+    box-shadow: var(--shadow-paper);
+    padding: 26px 24px;
+    position: relative;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  .card:hover {
+    transform: translate(-3px, -3px) rotate(1deg);
+    box-shadow: var(--shadow);
+  }
+  .card.tilt-1 { transform: rotate(-1deg); }
+  .card.tilt-2 { transform: rotate(1deg); }
+  .card.tilt-1:hover { transform: rotate(-1deg) translate(-3px,-3px); }
+  .card.tilt-2:hover { transform: rotate(1deg) translate(-3px,-3px); }
+
+  .card .tack {
+    position: absolute;
+    top: -13px; left: 50%;
+    transform: translateX(-50%);
+    width: 22px; height: 22px;
+    background: var(--accent);
+    border: 2px solid var(--fg);
+    border-radius: 50%;
+    box-shadow: 0 3px 0 rgba(45,45,45,0.35);
+  }
+  .card .tape {
+    position: absolute;
+    top: -13px; left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 90px; height: 26px;
+    background: rgba(45,45,45,0.13);
+  }
+
+  .card h3 { font-size: 1.65rem; margin-bottom: 8px; }
+  .card p { font-size: 1.08rem; color: #444; }
+
+  .feature { background: var(--yellow); }
+
+  .icon-badge {
+    width: 56px; height: 56px;
+    display: grid;
+    place-items: center;
+    background: #fff;
+    border: 2.5px solid var(--fg);
+    border-radius: 55% 45% 50% 50% / 50% 55% 45% 50%;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 16px;
+    transform: rotate(-3deg);
+  }
+  .icon-badge svg { stroke: var(--fg); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; fill: none; width: 28px; height: 28px; }
+
+  /* Skills lists */
+  .skill-block h3 { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .chip-list { list-style: none; display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip {
+    font-size: 1.05rem;
+    background: #fff;
+    border: 2px solid var(--fg);
+    border-radius: var(--wobbly-sm);
+    padding: 6px 16px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.1s ease, background 0.15s ease, color 0.15s ease;
+  }
+  .chip:hover { transform: rotate(-3deg) scale(1.05); background: var(--yellow); }
+  .chip .lvl { font-size: 0.85rem; opacity: 0.6; }
+
+  /* Project cards */
+  .proj-status {
+    display: inline-block;
+    font-size: 0.92rem;
+    background: var(--accent);
+    color: #fff;
+    border: 2px solid var(--fg);
+    border-radius: var(--wobbly-sm);
+    padding: 2px 12px;
+    transform: rotate(-2deg);
+    margin-bottom: 12px;
+  }
+  .proj-focus { list-style: none; margin-top: 14px; display: grid; gap: 7px; }
+  .proj-focus li { display: flex; gap: 9px; align-items: flex-start; font-size: 1.05rem; }
+  .proj-focus li::before { content: "–"; color: var(--accent); font-weight: 700; }
+
+  /* Tech stack tree */
+  .stack-box {
+    background: var(--fg);
+    color: #fdfbf7;
+    border: 3px solid var(--fg);
+    border-radius: var(--wobbly);
+    box-shadow: var(--shadow-lg);
+    padding: 26px 28px;
+    font-family: var(--font-head);
+    font-size: 1.15rem;
+    line-height: 1.9;
+    white-space: pre;
+    overflow-x: auto;
+    transform: rotate(-0.6deg);
+  }
+  .stack-box .k { color: #ffd45e; }
+  .stack-box .v { color: #8fe388; }
+
+  /* Vision */
+  .vision {
+    background: var(--yellow);
+    border: 3px solid var(--fg);
+    border-radius: var(--wobbly);
+    box-shadow: var(--shadow-lg);
+    padding: 44px 32px;
+    text-align: center;
+    transform: rotate(-0.8deg);
+  }
+  .vision .quote { font-family: var(--font-head); font-weight: 700; font-size: clamp(1.5rem, 4.5vw, 2.4rem); margin-bottom: 14px; }
+  .vision .quote::before { content: "“"; color: var(--accent); }
+  .vision .quote::after { content: "”"; color: var(--accent); }
+
+  /* Contact / footer */
+  footer {
+    border-top: 3px dashed var(--fg);
+    padding: 44px 0 32px;
+    margin-top: 20px;
+  }
+  .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; align-items: flex-start; }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
+  .footer-links a { position: relative; }
+  .footer-links a:hover { text-decoration: line-through; color: var(--accent); }
+  .socials { display: flex; gap: 12px; }
+  .socials a {
+    width: 46px; height: 46px;
+    display: grid; place-items: center;
+    background: #fff;
+    border: 2.5px solid var(--fg);
+    border-radius: var(--wobbly-sm);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.1s ease, background 0.15s ease, color 0.15s ease;
+  }
+  .socials a:hover { transform: rotate(-5deg) translateY(-2px); background: var(--accent); color: #fff; }
+  .socials svg { width: 22px; height: 22px; fill: currentColor; }
+  .copyright { margin-top: 28px; font-size: 1rem; color: #666; text-align: center; }
+
+  /* Divider squiggle */
+  .squiggle { width: 120px; height: 16px; color: var(--accent); margin: 0 auto 8px; }
+
+  /* ================= SCROLL REVEAL ================= */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; scroll-behavior: auto !important; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 840px) {
+    :root { --section-py: 52px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-visual { order: -1; max-width: 460px; }
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    .nav-toggle { display: block; }
+    .nav-links {
+      position: absolute;
+      top: 100%; right: 16px; left: 16px;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 4px;
+      background: var(--card);
+      border: 3px solid var(--fg);
+      border-radius: var(--wobbly-md);
+      box-shadow: var(--shadow);
+      padding: 14px;
+      transform: translateY(-8px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.18s ease, transform 0.18s ease;
+    }
+    .nav-links.open { opacity: 1; transform: translateY(6px); pointer-events: auto; }
+    .nav-links a { padding: 10px 8px; border-bottom: 1.5px dashed var(--muted); }
+    .nav-links a:last-child { border-bottom: none; }
+    .nav-links a::after { display: none; }
+    .arrow-doodle, .bounce-dot { display: none; }
+  }
+
+  @media (max-width: 420px) {
+    body { font-size: 1.08rem; }
+    .container { padding: 0 18px; }
+    .btn { width: 100%; }
+    .hero-actions { flex-direction: column; }
+    .footer-inner { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav">
+  <nav class="nav-inner" aria-label="Navigasi utama">
+    <a href="#top" class="brand" aria-label="Hendra Developer - beranda">
+      <span class="dot" aria-hidden="true"></span> Hendra<span style="color:var(--accent)">.</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Buka menu navigasi">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <span class="hero-badge"><span class="pulse" aria-hidden="true"></span> Active Developer</span>
+          <h1 id="hero-title">Hai, saya Hendra<span class="excl" aria-hidden="true">!</span></h1>
+          <p class="role">Frontend &amp; Backend Developer</p>
+          <p class="lead">
+            Saya membangun aplikasi dan website dari sisi <strong>frontend</strong> maupun
+            <strong>backend</strong> — sederhana, efisien, dan mampu menyelesaikan masalah nyata.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#projects">Lihat Projects →</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <span class="tape" aria-hidden="true"></span>
+            <span class="bounce-dot" aria-hidden="true"></span>
+            <div class="term" role="img" aria-label="Contoh kode profil Hendra">
+<span class="cmt">// profile.js</span>
+<span class="key">const</span> hendra = {
+  role: <span class="str">"Developer"</span>,
+  focus: [<span class="str">"Frontend"</span>, <span class="str">"Backend"</span>],
+  stack: [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JS"</span>, <span class="str">"Python"</span>],
+  motto: <span class="str">"solve real problems"</span>
+};<span class="cur" aria-hidden="true"></span></div>
+            <svg class="arrow-doodle" width="90" height="60" viewBox="0 0 90 60" fill="none" aria-hidden="true">
+              <path d="M4 8C18 34 40 46 74 44" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6"/>
+              <path d="M62 34l14 10-16 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title" id="about-title">Tentang Saya</h2>
+        <p class="section-sub">
+          Saya developer yang fokus pada pengembangan aplikasi dan website, baik frontend maupun
+          backend. Saya tertarik membangun aplikasi yang tidak hanya berfungsi dengan baik, tetapi
+          juga membantu menyelesaikan masalah nyata dalam kehidupan sehari-hari.
+        </p>
+      </div>
+
+      <ul class="grid grid-3" style="margin-top:32px; list-style:none;">
+        <li class="card tilt-1 reveal" style="animation-delay:.05s">
+          <div class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7V19h8v-4.3A7 7 0 0 0 12 2Z"/><path d="M9 21h6"/></svg></div>
+          <h3>Nama</h3><p>Hendra</p>
+        </li>
+        <li class="card tilt-2 reveal" style="animation-delay:.1s">
+          <div class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 6-5 6 5 6M16 6l5 6-5 6M14 4l-4 16"/></svg></div>
+          <h3>Role</h3><p>Developer</p>
+        </li>
+        <li class="card tilt-1 reveal" style="animation-delay:.15s">
+          <div class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Status</h3><p>Active Developer</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" aria-labelledby="skills-title">
+    <div class="container">
+      <div class="reveal" style="text-align:center">
+        <svg class="squiggle" viewBox="0 0 120 16" fill="none" aria-hidden="true"><path d="M2 8c8-10 16 10 24 0s16-10 24 0 16 10 24 0 16-10 24 0" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+        <span class="section-tag">Keahlian</span>
+        <h2 class="section-title" id="skills-title">Skills</h2>
+        <p class="section-sub" style="margin:0 auto">
+          Terus mengembangkan kemampuan di bidang frontend dan backend untuk membangun aplikasi yang
+          sederhana, efisien, dan mudah digunakan.
+        </p>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:34px">
+        <div class="card feature tilt-1 reveal">
+          <span class="tape" aria-hidden="true"></span>
+          <div class="skill-block">
+            <h3><span aria-hidden="true">🎨</span> Frontend</h3>
+            <ul class="chip-list">
+              <li class="chip">HTML</li>
+              <li class="chip">CSS</li>
+              <li class="chip">JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card tilt-2 reveal">
+          <span class="tack" aria-hidden="true"></span>
+          <div class="skill-block">
+            <h3><span aria-hidden="true">⚙️</span> Backend</h3>
+            <ul class="chip-list">
+              <li class="chip">Python</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" aria-labelledby="projects-title">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title" id="projects-title">Projects</h2>
+        <p class="section-sub">Beberapa aplikasi yang saya bangun untuk menyelesaikan masalah nyata.</p>
+      </div>
+
+      <div class="grid grid-3" style="margin-top:34px">
+        <article class="card tilt-1 reveal">
+          <span class="tape" aria-hidden="true"></span>
+          <h3>Mesin Kasir</h3>
+          <p>Aplikasi mesin kasir yang dibuat untuk membantu proses transaksi dan pencatatan penjualan.</p>
+          <ul class="proj-focus">
+            <li>Transaksi penjualan</li>
+            <li>Pencatatan data</li>
+            <li>Pengelolaan transaksi</li>
+          </ul>
+        </article>
+
+        <article class="card tilt-2 reveal">
+          <span class="tack" aria-hidden="true"></span>
+          <h3>Aplikasi Manajemen Uang</h3>
+          <p>Aplikasi untuk membantu pengguna mengelola keuangan dengan lebih teratur.</p>
+          <ul class="proj-focus">
+            <li>Pencatatan pemasukan</li>
+            <li>Pencatatan pengeluaran</li>
+            <li>Pengelolaan keuangan</li>
+          </ul>
+        </article>
+
+        <article class="card tilt-1 reveal">
+          <span class="tape" aria-hidden="true"></span>
+          <span class="proj-status">In Development</span>
+          <h3>Sistem Manajemen Kost</h3>
+          <p>Sistem untuk membantu pemilik kost mengelola pembayaran penghuni tanpa perlu menagih berulang.</p>
+          <ul class="proj-focus">
+            <li>Manajemen data penghuni &amp; kamar</li>
+            <li>Pencatatan &amp; status pembayaran</li>
+            <li>Pengingat &amp; riwayat pembayaran</li>
+            <li>Dashboard pemilik kost</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VISION ================= -->
+  <section aria-labelledby="vision-title">
+    <div class="container">
+      <div class="vision reveal">
+        <span class="section-tag">Vision</span>
+        <h2 class="quote" id="vision-title">Build technology that solves real problems.</h2>
+        <p class="section-sub" style="margin:0 auto">
+          Saya ingin terus mengembangkan aplikasi yang sederhana, berguna, dan mampu memberikan
+          solusi terhadap permasalahan nyata.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <a href="#top" class="brand" aria-label="Hendra Developer - beranda">
+        <span class="dot" aria-hidden="true"></span> Hendra<span style="color:var(--accent)">.</span>
+      </a>
+      <div class="footer-links" aria-label="Tautan cepat">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+    <p class="copyright">
+      © <span id="year"></span> <strong>HENDRA Developer</strong> — Frontend &amp; Backend Developer.
+    </p>
+  </div>
+</footer>
+
+<script>
+  // ===== Mobile nav toggle =====
+  (function () {
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    if (!toggle || !links) return;
+
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.textContent = open ? '✕' : '☰';
+      toggle.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
+    });
+
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A' && links.classList.contains('open')) {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.textContent = '☰';
+      }
+    });
+  })();
+
+  // ===== Scroll reveal =====
+  (function () {
+    var items = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      items.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(function (el) { io.observe(el); });
+  })();
+
+  // ===== Dynamic year =====
+  (function () {
+    var y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>
